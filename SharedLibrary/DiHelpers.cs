@@ -17,13 +17,13 @@ namespace SharedLibrary
                                .SetBasePath(Directory.GetCurrentDirectory())
                                .AddJsonFile("appsettings.json", optional : true)
 #if TST
-                               .AddJsonFile($"appsettings.Tst.json", optional : true)
+                               .AddJsonFile($"appsettings.tst.json", optional : true)
 #elif UAT
-                               .AddJsonFile($"appsettings.Uat.json", optional : true)
+                               .AddJsonFile($"appsettings.uat.json", optional : true)
 #elif RELEASE
-                               .AddJsonFile($"appsettings.Release.json", optional : true)
+                               .AddJsonFile($"appsettings.release.json", optional : true)
 #else
-                               .AddJsonFile($"appsettings.Debug.json", optional : true)
+                               .AddJsonFile($"appsettings.debug.json", optional : true)
 #endif
                                .AddEnvironmentVariables()
                                .Build();
