@@ -5,33 +5,47 @@ VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCoreFirstTest", "EfCoreFirstTest\EfCoreFirstTest.csproj", "{598DD280-113B-4078-A7E7-B8DB21723E3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{DB47559A-A81B-4529-8203-44FA98447555}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{DB47559A-A81B-4529-8203-44FA98447555}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{E9A05B1C-D76F-4ADA-B651-4E091BBDEA7E}"
-ProjectSection(SolutionItems) = preProject
-	README.md = README.md
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationConsole", "MigrationConsole\MigrationConsole.csproj", "{72E7B3F3-2A68-499A-ADC2-0B30155227B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigrationConsole", "MigrationConsole\MigrationConsole.csproj", "{72E7B3F3-2A68-499A-ADC2-0B30155227B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Tst|Any CPU = Tst|Any CPU
+		Uat|Any CPU = Uat|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{598DD280-113B-4078-A7E7-B8DB21723E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{598DD280-113B-4078-A7E7-B8DB21723E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{598DD280-113B-4078-A7E7-B8DB21723E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{598DD280-113B-4078-A7E7-B8DB21723E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598DD280-113B-4078-A7E7-B8DB21723E3F}.Tst|Any CPU.ActiveCfg = Tst|Any CPU
+		{598DD280-113B-4078-A7E7-B8DB21723E3F}.Tst|Any CPU.Build.0 = Tst|Any CPU
+		{598DD280-113B-4078-A7E7-B8DB21723E3F}.Uat|Any CPU.ActiveCfg = Uat|Any CPU
+		{598DD280-113B-4078-A7E7-B8DB21723E3F}.Uat|Any CPU.Build.0 = Uat|Any CPU
 		{DB47559A-A81B-4529-8203-44FA98447555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB47559A-A81B-4529-8203-44FA98447555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB47559A-A81B-4529-8203-44FA98447555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB47559A-A81B-4529-8203-44FA98447555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB47559A-A81B-4529-8203-44FA98447555}.Tst|Any CPU.ActiveCfg = Tst|Any CPU
+		{DB47559A-A81B-4529-8203-44FA98447555}.Tst|Any CPU.Build.0 = Tst|Any CPU
+		{DB47559A-A81B-4529-8203-44FA98447555}.Uat|Any CPU.ActiveCfg = Uat|Any CPU
+		{DB47559A-A81B-4529-8203-44FA98447555}.Uat|Any CPU.Build.0 = Uat|Any CPU
 		{72E7B3F3-2A68-499A-ADC2-0B30155227B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{72E7B3F3-2A68-499A-ADC2-0B30155227B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E7B3F3-2A68-499A-ADC2-0B30155227B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E7B3F3-2A68-499A-ADC2-0B30155227B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E7B3F3-2A68-499A-ADC2-0B30155227B7}.Tst|Any CPU.ActiveCfg = Tst|Any CPU
+		{72E7B3F3-2A68-499A-ADC2-0B30155227B7}.Tst|Any CPU.Build.0 = Tst|Any CPU
+		{72E7B3F3-2A68-499A-ADC2-0B30155227B7}.Uat|Any CPU.ActiveCfg = Uat|Any CPU
+		{72E7B3F3-2A68-499A-ADC2-0B30155227B7}.Uat|Any CPU.Build.0 = Uat|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

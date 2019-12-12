@@ -13,16 +13,18 @@ namespace SharedLibrary
         {
             var serviceCollection = new ServiceCollection();
 
-            var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-            if (string.IsNullOrWhiteSpace(environmentName))
-            {
-                environmentName = "Debug";
-            }
-
             var configuration = new ConfigurationBuilder()
                                .SetBasePath(Directory.GetCurrentDirectory())
-                               .AddJsonFile("appsettings.json", optional: true)
-                               .AddJsonFile($"appsettings.{environmentName}.json", optional: true)
+                               .AddJsonFile("appsettings.json", optional : true)
+#if TST
+                               .AddJsonFile($"appsettings.Tst.json", optional : true)
+#elif UAT
+                               .AddJsonFile($"appsettings.Uat.json", optional : true)
+#elif RELEASE
+                               .AddJsonFile($"appsettings.Release.json", optional : true)
+#else
+                               .AddJsonFile($"appsettings.Debug.json", optional : true)
+#endif
                                .AddEnvironmentVariables()
                                .Build();
 
