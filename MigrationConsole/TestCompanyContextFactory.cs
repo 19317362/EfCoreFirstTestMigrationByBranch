@@ -6,11 +6,11 @@ using SharedLibrary;
 
 namespace MigrationConsole
 {
-public class TestCompany1ContextFactory : IDesignTimeDbContextFactory<TestDbContext>
+public class TestCompanyContextFactory : IDesignTimeDbContextFactory<TestDbContext>
 {
     private readonly IConfigurationRoot _configuration;
 
-    public TestCompany1ContextFactory()
+    public TestCompanyContextFactory()
     {
         _configuration = DiHelpers.DiFactory<IConfigurationRoot>();
     }
