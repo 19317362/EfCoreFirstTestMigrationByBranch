@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Migrations\20191211142827_Initial.cs" />
+      <Compile Remove="Migrations\20191211142827_Initial.Designer.cs" />
+      <Compile Remove="Migrations\20191211143111_remove.cs" />
+      <Compile Remove="Migrations\20191211143111_remove.Designer.cs" />
+      <Compile Remove="Migrations\20191211143215_Initial.cs" />
+      <Compile Remove="Migrations\20191211143215_Initial.Designer.cs" />
+      <Compile Remove="Migrations\20191211152326_Initial.cs" />
+      <Compile Remove="Migrations\20191211152326_Initial.Designer.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EfCoreFirstTest\EfCoreFirstTest.csproj" />
+      <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+    </ItemGroup>
+
+</Project>
