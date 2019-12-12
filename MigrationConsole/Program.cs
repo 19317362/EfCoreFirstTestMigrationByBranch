@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace MigrationConsole
 {
@@ -6,7 +7,14 @@ namespace MigrationConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Start Migrations");
+
+            using (var dbContext = new TestCompanyContextFactory().CreateDbContext(args))
+            {
+                dbContext.Database.Migrate();
+            }
+            
+            Console.WriteLine("Migrations Finished");
         }
     }
 }

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MigrationConsole": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Debug"
+      }
+    }
+  }
+}
